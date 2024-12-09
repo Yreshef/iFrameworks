@@ -8,18 +8,49 @@
 
 /* Begin PBXFileReference section */
 		65D09DB42D0628A70089A7AA /* iFrameworks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iFrameworks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		65F971222D0769B400859063 /* iFrameworks - List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iFrameworks - List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		65F971312D0769D000859063 /* Exceptions for "iFrameworks" folder in "iFrameworks - List" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Model/Framework.swift,
+				Model/MockData.swift,
+				UIKitComponents/SafariView.swift,
+				Views/Reusables/iFButton.swift,
+				Views/Reusables/iFrameworkTitleView.swift,
+				Views/Reusables/XDismissButton.swift,
+			);
+			target = 65F971212D0769B400859063 /* iFrameworks - List */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		65D09DB62D0628A70089A7AA /* iFrameworks */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				65F971312D0769D000859063 /* Exceptions for "iFrameworks" folder in "iFrameworks - List" target */,
+			);
 			path = iFrameworks;
+			sourceTree = "<group>";
+		};
+		65F971232D0769B400859063 /* iFrameworks - List */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "iFrameworks - List";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		65D09DB12D0628A70089A7AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65F9711F2D0769B400859063 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				65D09DB62D0628A70089A7AA /* iFrameworks */,
+				65F971232D0769B400859063 /* iFrameworks - List */,
 				65D09DB52D0628A70089A7AA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				65D09DB42D0628A70089A7AA /* iFrameworks.app */,
+				65F971222D0769B400859063 /* iFrameworks - List.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +103,28 @@
 			productReference = 65D09DB42D0628A70089A7AA /* iFrameworks.app */;
 			productType = "com.apple.product-type.application";
 		};
+		65F971212D0769B400859063 /* iFrameworks - List */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65F9712D2D0769B500859063 /* Build configuration list for PBXNativeTarget "iFrameworks - List" */;
+			buildPhases = (
+				65F9711E2D0769B400859063 /* Sources */,
+				65F9711F2D0769B400859063 /* Frameworks */,
+				65F971202D0769B400859063 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				65F971232D0769B400859063 /* iFrameworks - List */,
+			);
+			name = "iFrameworks - List";
+			packageProductDependencies = (
+			);
+			productName = "iFrameworks - List";
+			productReference = 65F971222D0769B400859063 /* iFrameworks - List.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -81,6 +136,9 @@
 				LastUpgradeCheck = 1610;
 				TargetAttributes = {
 					65D09DB32D0628A70089A7AA = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					65F971212D0769B400859063 = {
 						CreatedOnToolsVersion = 16.1;
 					};
 				};
@@ -100,6 +158,7 @@
 			projectRoot = "";
 			targets = (
 				65D09DB32D0628A70089A7AA /* iFrameworks */,
+				65F971212D0769B400859063 /* iFrameworks - List */,
 			);
 		};
 /* End PBXProject section */
@@ -112,10 +171,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		65F971202D0769B400859063 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		65D09DB02D0628A70089A7AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65F9711E2D0769B400859063 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -167,10 +240,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -267,6 +337,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yreshef.iFrameworks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS[sdk=iphone*]" = iFrameworks;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -296,6 +367,65 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yreshef.iFrameworks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS[sdk=iphone*]" = iFrameworks;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		65F9712E2D0769B500859063 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iFrameworks - List/Preview Content\"";
+				DEVELOPMENT_TEAM = 66G95X29R7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yreshef.iFrameworks---List";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		65F9712F2D0769B500859063 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iFrameworks - List/Preview Content\"";
+				DEVELOPMENT_TEAM = 66G95X29R7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yreshef.iFrameworks---List";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -319,6 +449,15 @@
 			buildConfigurations = (
 				65D09DC32D0628A90089A7AA /* Debug */,
 				65D09DC42D0628A90089A7AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65F9712D2D0769B500859063 /* Build configuration list for PBXNativeTarget "iFrameworks - List" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65F9712E2D0769B500859063 /* Debug */,
+				65F9712F2D0769B500859063 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

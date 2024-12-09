@@ -9,14 +9,13 @@ import SwiftUI
 
 struct XDismissButton: View {
     
-    @Binding var isShowingModalView: Bool
     
     var body: some View {
         HStack {
             Spacer()
             
             Button {
-                isShowingModalView = false
+//                isShowingModalView = false
             } label: {
                 Image(systemName: "xmark")
                     .foregroundColor(Color(.label))
@@ -29,6 +28,6 @@ struct XDismissButton: View {
 }
 
 #Preview {
-    XDismissButton(isShowingModalView: .constant(false))
+    XDismissButton()
     Spacer()
 }

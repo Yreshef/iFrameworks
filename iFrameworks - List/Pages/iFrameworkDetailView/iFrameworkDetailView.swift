@@ -1,8 +1,8 @@
 //
 //  iFrameworkDetailView.swift
-//  iFrameworks
+//  iFrameworks - List
 //
-//  Created by Yohai on 08/12/2024.
+//  Created by Yohai on 09/12/2024.
 //
 
 import SwiftUI
@@ -11,12 +11,13 @@ struct iFrameworkDetailView: View {
     
     let framework: Framework
     let buttonTitle: String = "Learn More"
+    @Binding var isShowingDetailView: Bool
     @State private var isShowingSafariView = false
     
     var body: some View {
         
         VStack {
-                    
+            
             Spacer()
             
             iFrameworkTitleView(framework: framework)
@@ -41,5 +42,5 @@ struct iFrameworkDetailView: View {
 }
 
 #Preview {
-    iFrameworkDetailView(framework: MockData.frameworks.first!)
+    iFrameworkDetailView(framework: MockData.frameworks.first!, isShowingDetailView: .constant(false))
 }
